@@ -1,0 +1,4 @@
+dome:
+  name: demo-dev
+server:
+  port: 8081
