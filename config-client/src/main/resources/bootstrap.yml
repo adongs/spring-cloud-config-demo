@@ -1,7 +1,17 @@
 spring:
    cloud:
     config:
-      profile: dev
+      profile: pre
       uri: http://localhost:8888
    application:
      name: client
+   rabbitmq:
+       host: localhost
+       username: guest
+       password: guest
+       port: 5672
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-env,bus-refresh
